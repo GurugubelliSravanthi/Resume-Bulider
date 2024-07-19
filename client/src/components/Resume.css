@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --background-color: #f5f7fa;
+    --card-background: #ffffff;
+    --text-color: #333333;
+    --light-text-color: #7f8c8d;
+    --border-color: #e0e0e0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.resume-page {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.resume-container {
+    background-color: var(--card-background);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.resume-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.resume-header h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.resume-header h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0.5rem 0 0;
+    opacity: 0.9;
+}
+
+.resume-content {
+    display: flex;
+    padding: 2rem;
+}
+
+.resume-sidebar {
+    flex: 1;
+    background-color: var(--card-background);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.resume-main {
+    flex: 2;
+    padding: 0 2rem;
+}
+
+.resume-section {
+    margin-bottom: 2rem;
+}
+
+.resume-section h3 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.resume-section h3 svg {
+    margin-right: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.contact-list, .skills-list, .languages-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-list li, .skills-list li, .languages-list li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact-list svg, .skills-list svg, .languages-list svg {
+    margin-right: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.skills-list li, .languages-list li {
+    background-color: var(--background-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.education-list, .experience-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.education-list li, .experience-list li {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    border-left: 2px solid var(--secondary-color);
+    position: relative;
+}
+
+.education-list li::before, .experience-list li::before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+}
+
+.education-list h4, .experience-list h4 {
+    color: var(--primary-color);
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.education-list p, .experience-list p {
+    margin: 0;
+    color: var(--light-text-color);
+    font-size: 0.9rem;
+}
+
+.home-button, .download-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(52, 152, 219, 0.2);
+}
+
+.home-button svg, .download-button svg {
+    margin-right: 0.5rem;
+}
+
+.home-button:hover, .download-button:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(52, 152, 219, 0.3);
+}
+
+.button-container, .download-button-container {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .resume-content {
+        flex-direction: column;
+    }
+
+    .resume-sidebar, .resume-main {
+        padding: 1rem;
+    }
+}

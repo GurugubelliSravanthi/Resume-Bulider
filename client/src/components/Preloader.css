@@ -1,0 +1,87 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque background */
+    z-index: 9999; /* Make sure it covers other elements */
+}
+
+.preloaderh3 {
+    text-transform: capitalize;
+}
+.brand-name1{
+    position: absolute !important;
+    top: 15em !important;
+    top: 20px !important;
+    left: 20px !important;
+    font-size: 34px !important;
+    font-weight: 900 !important;
+    font-style: italic !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #444443;
+}
+.brand-name {
+    position: absolute !important;
+    top: 15em !important;
+    top: 20px !important;
+    left: 20px !important;
+    font-size: 34px !important;
+    font-weight: 900 !important;
+    font-style: italic !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #444443;
+}
+
+.spinner {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.welcome-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.welcome-text h1 {
+    font-size: 34px;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 10px;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-text h3 {
+    font-size: 20px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preloader-image {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%; /* Optional: if you want a circular image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
