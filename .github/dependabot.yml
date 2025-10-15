@@ -4,7 +4,7 @@ updates:
   - package-ecosystem: "npm"
     directory: "/" # Location of package.json
     schedule:
-      interval: "weekly" # Options: daily, weekly, monthly
+      interval: "daily" # Options: daily, weekly, monthly
     open-pull-requests-limit: 5
     commit-message:
       prefix: "deps"
